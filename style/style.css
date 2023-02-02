@@ -1,0 +1,424 @@
+/* GENERAL styles */
+body {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+
+.no_padding {
+  padding: 0;
+}
+
+.padded {
+  padding: 4em;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.subsection {
+  margin-bottom: 1em;
+}
+
+a, a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+a:hover, a:active {
+  color: #4078c0;
+  text-decoration: none;
+}
+/* GENERAL styles */
+
+
+
+
+/* INTRO styles */
+#me {
+  margin: 0 auto;
+  float: right;
+}
+
+#me img {
+  width: 100%;
+  height: auto;
+  padding: 2em;
+}
+
+#greeting {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* fix for ie11 */
+  /* https://stackoverflow.com/questions/19371626/flexbox-not-centering-vertically-in-ie */
+  min-height: 2em;
+  height: 1em;
+}
+
+#statement {
+  font-weight: 700;
+  text-align: center;
+}
+/* INTRO styles */
+
+
+
+
+/* INTERESTS styles */
+#interests_section {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(../img/grid.png);
+  color: #fff;
+}
+
+#interests_header {
+  font-weight: 400;
+}
+
+.interest {
+  padding-top: .8em;
+  padding-bottom: .8em;
+}
+
+.interest_title {
+  font-weight: 700;
+  margin-bottom: -.2em;
+}
+
+.interest_description {
+  font-weight: 300;
+  font-style: italic;
+}
+/* INTERESTS styles */
+
+
+
+
+/* SKILLS styles */
+#skills_header {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* fix for ie11 */
+  /* https://stackoverflow.com/questions/19371626/flexbox-not-centering-vertically-in-ie */
+  min-height: 2em;
+  height: 1em;
+}
+
+.skills {
+  font-weight: 300;
+}
+/* SKILLS styles */
+
+
+
+
+/* EDU styles */
+#edu_header {
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: .2em;
+}
+
+.edu_container .left_col {
+  text-align: center;
+}
+
+.edu_container .right_col {
+  text-align: center;
+}
+
+.edu {
+  text-align: left;
+  display: inline-block;
+}
+
+.edu .subsection {
+  margin-bottom: .2em;
+}
+
+.subsection_content {
+  font-weight: 300;
+  margin-top: -.4em;
+}
+
+.degree {
+  font-weight: 300;
+}
+
+.school {
+  font-weight: 600;
+}
+
+.school_details {
+  padding-bottom: 1em;
+  font-weight: 400;
+}
+
+/* .edu_container .right_col .school_details {
+  padding-bottom: 0em;
+} */
+.edu_container .right_col .subsection {
+  padding-bottom: 0em;
+}
+/* EDU styles */
+
+
+
+
+/* FOOTER styles */
+#footer_section {
+  background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(../img/grid.png);
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+#resume_header {
+  font-weight: 300;
+}
+
+#resume_format {
+  font-weight: 600;
+  margin-top: -.4em;
+}
+
+#social {
+  margin-top: .4em;
+}
+/* FOOTER styles */
+
+
+
+
+
+
+
+
+/* media queries (mirroring bootstrap values) */
+/* Extra small devices (phones, less than 768px) */
+@media (max-width:767px) {
+  .padded {
+    padding: 2em 0em;
+  }
+
+  /* 25% size drop for image, custom for fonts */
+  #me {
+    max-width: 15em;
+    float: none;
+  }
+  #greeting {
+    display: block;
+    text-align: center;
+    font-size: 8vw;
+  }
+  #statement {
+    font-size: 12vw;
+    padding-bottom: .4em;
+  }
+
+  .interest {
+    padding: 1em;
+  }
+  .interest_title {
+    font-size: 4vw;
+    margin-bottom: -.4em;
+  }
+  .interest_description {
+    font-size: 5vw;
+  }
+
+  #skills_header {
+    font-size: 6vw;
+    display: block;
+    text-align: center;
+  }
+  #skill_container {
+    text-align: center;
+  }
+  #skill_container .subsection {
+    padding: 1em 1em 0em 1em;
+  }
+  #skill_container .subsection_header {
+    font-size: 3.4vw;
+    margin-bottom: -.4em;
+  }
+  .skills {
+    font-size: 4vw;
+  }
+
+  #edu_header {
+    font-size: 6vw;
+    display: block;
+    text-align: center;
+  }
+  .edu {
+    text-align: center;
+  }
+  .edu_container .left_col {
+    padding-bottom: 2em;
+  }
+  .edu_container .subsection {
+    margin-bottom: .4em;
+  }
+  .edu_container .subsection_header {
+    font-size: 3.4vw;
+    margin-bottom: -.4em;
+  }
+  .edu_container .subsection_content {
+    font-size: 4vw;
+  }
+  .degree {
+    font-size: 6vw;
+  }
+  .school {
+    font-size: 4vw;
+  }
+  .school_details {
+    font-size: 6vw;
+    padding-bottom: .2em;
+  }
+
+  #resume_header {
+    font-size: 6vw;
+  }
+  #resume_format {
+    font-size: 4vw;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .last_subsection {
+    margin-bottom: 0em;
+  }
+
+  /* 20% size drop */
+  #me {
+    max-width: 20em;
+  }
+  #greeting {
+    font-size: 3.04em;
+  }
+  #statement {
+    font-size: 7.2em;
+  }
+
+  /* 10% size drop */
+  .interest_title {
+    font-size: .9em;
+  }
+  .interest_description {
+    font-size: 1.26em;
+  }
+
+  /* 10% size drop */
+  #skills_header {
+    font-size: 1.8em;
+  }
+  .skills {
+    font-size: 1.08em;
+  }
+  .subsection_header {
+    font-size: .81em;
+  }
+
+  /* 10% size drop */
+  #edu_header {
+    font-size: 3.6em;
+  }
+  .subsection_content {
+    font-size: .81em;
+  }
+  .degree {
+    font-size: 1.62em;
+  }
+  .school {
+    font-size: 1.08em;
+  }
+  .school_details {
+    font-size: 1.08em;
+  }
+
+  /* 10% size drop */
+  #resume_header {
+    font-size: 1.8em;
+  }
+  #resume_format {
+    font-size: .9em;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #me {
+    max-width: 25em;
+  }
+  #greeting {
+    font-size: 3.8em;
+  }
+  #statement {
+    font-size: 9em;
+    margin-bottom: .2em;
+  }
+
+  .interest_title {
+    font-size: 1em;
+  }
+  .interest_description {
+    font-size: 1.4em;
+  }
+
+  #skills_header {
+    font-size: 2em;
+  }
+  .skills {
+    font-size: 1.2em;
+  }
+  .subsection_header {
+    font-size: .9em;
+  }
+
+  #edu_header {
+    font-size: 4em;
+  }
+  .subsection_content {
+    font-size: .9em;
+  }
+  .degree {
+    font-size: 1.8em;
+  }
+  .school {
+    font-size: 1.2em;
+  }
+  .school_details {
+    font-size: 1.2em;
+  }
+
+  #resume_header {
+    font-size: 2em;
+  }
+  #resume_format {
+    font-size: 1em;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .left_col {
+    float: right;
+    width: 40em;
+  }
+  .right_col {
+    float: left;
+    width: 40em;
+  }
+
+  #skills_header {
+    width: 20em;
+  }
+}
